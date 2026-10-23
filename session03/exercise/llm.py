@@ -23,7 +23,7 @@ def ask_with_history(history, model, instructions):
         model=model,
         reasoning={'effort': 'none'},
         instructions=instructions,
-        input=history,  # 今回の質問だけでなく、これまでの会話のリストを送る
+        input=history,  # 今回の質問だけでなく、これまでの会話のリストを送
         max_output_tokens=600,
         store=False,  # 送った内容をOpenAI側に保存しない。だから履歴は毎回自分で送る
     )
